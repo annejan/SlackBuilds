@@ -4,11 +4,11 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Slackers.it : Slackware current slackbuilds (Build to slackers.it repository)">
+    <meta name="description" content="Slackers : Slackware current slackbuilds (Build to Conraid repository)">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Slackers.it</title>
+    <title>Slackers</title>
   </head>
 
   <body>
@@ -18,8 +18,8 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/conraid/SlackBuilds">View on GitHub</a>
 
-          <h1 id="project_title">Slackers.it</h1>
-          <h2 id="project_tagline">Slackware current slackbuilds (Build to slackers.it repository)</h2>
+          <h1 id="project_title">Slackers</h1>
+          <h2 id="project_tagline">Slackware current slackbuilds (Build to Conraid repository)</h2>
 
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/conraid/SlackBuilds/zipball/master">Download this project as a .zip file</a>
@@ -35,36 +35,40 @@
 
 <h1></h1>
 
-<p>Repository contain contains everything (SlackBuild script, slack-desc file,
+<p>Repository contains everything (SlackBuild script, slack-desc file,
 plus all possible patch) you'll need when you want to build the packages yourself.</p>
 
 <p>To make package from slackbuild do</p>
 
 <h1>
-<a name="cd-" class="anchor" href="#cd-"><span class="octicon octicon-link"></span></a>cd </h1>
+<a id="cd-" class="anchor" href="#cd-" aria-hidden="true"><span class="octicon octicon-link"></span></a>cd </h1>
 
 <p>Download source code:</p>
 
 <h1>
-<a name="source-info" class="anchor" href="#source-info"><span class="octicon octicon-link"></span></a>source .info</h1>
+<a id="source-info" class="anchor" href="#source-info" aria-hidden="true"><span class="octicon octicon-link"></span></a>source .info</h1>
 
 <h1>
-<a name="wget--c-download" class="anchor" href="#wget--c-download"><span class="octicon octicon-link"></span></a>wget -c $DOWNLOAD</h1>
+<a id="curl--jol-download" class="anchor" href="#curl--jol-download" aria-hidden="true"><span class="octicon octicon-link"></span></a>curl -JOL $DOWNLOAD</h1>
 
-<p>if exists SOURCE variable, do instead</p>
-
-<h1>
-<a name="wget--c-download--o-source" class="anchor" href="#wget--c-download--o-source"><span class="octicon octicon-link"></span></a>wget -c $DOWNLOAD -O $SOURCE</h1>
-
-<p>if exists EXTRAFILE variables, do also</p>
+<p>or</p>
 
 <h1>
-<a name="wget--c-extrafile1-extrafile2" class="anchor" href="#wget--c-extrafile1-extrafile2"><span class="octicon octicon-link"></span></a>wget -c $EXTRAFILE1 [$EXTRAFILE2]</h1>
+<a id="wget---no-check-certificate---content-disposition-download" class="anchor" href="#wget---no-check-certificate---content-disposition-download" aria-hidden="true"><span class="octicon octicon-link"></span></a>wget [--no-check-certificate] [--content-disposition] $DOWNLOAD</h1>
+
+<p>wget, with some servers, doesn't set the correct filename</p>
+
+<p>If exists FILENAME variable means that it contains the filename.</p>
+
+<p>if exists DOWNLOAD extra variables, do also</p>
+
+<h1>
+<a id="wget---no-check-certificate---content-disposition-download_xxx-download_yyy" class="anchor" href="#wget---no-check-certificate---content-disposition-download_xxx-download_yyy" aria-hidden="true"><span class="octicon octicon-link"></span></a>wget --no-check-certificate --content-disposition $DOWNLOAD_XXX [$DOWNLOAD_YYY]</h1>
 
 <p>Build:</p>
 
 <h1>
-<a name="sh-slackbuild" class="anchor" href="#sh-slackbuild"><span class="octicon octicon-link"></span></a>sh .SlackBuild</h1>
+<a id="sh-slackbuild" class="anchor" href="#sh-slackbuild" aria-hidden="true"><span class="octicon octicon-link"></span></a>sh .SlackBuild</h1>
 
 <p>to build a package which will be created in the same directory.</p>
 
@@ -73,15 +77,16 @@ you can contact me at slackers.it (at) gmail (dot) com</p>
 
 <p>Packaged by Corrado Franco (<a href="http://conraid.net">http://conraid.net</a>)</p>
 
-<p>Compiled packages are on <a href="http://slackers.it/repository">http://slackers.it/repository</a></p>
+<p>Compiled packages are on <a href="http://ponce.cc/slackers/repository/">http://ponce.cc/slackers/repository/</a>
+or <a href="https://sourceforge.net/projects/slackers/">https://sourceforge.net/projects/slackers/</a></p>
       </section>
     </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Slackers.it maintained by <a href="https://github.com/conraid">conraid</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+        <p class="copyright">Slackers maintained by <a href="https://github.com/conraid">conraid</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
 
